@@ -37,3 +37,7 @@ class CategoryItem extends StatelessWidget {
     );
   }
 }
+
+// * NOTES
+// We can navigate with screens or pages using Navigator. Navigator needs a context. MaterialPageRoute can be used give navigator to the screen.
+//Inkwell is the basically widget like gesturedector but it has the ripple effect that gesturedector doesn't have.
