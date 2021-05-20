@@ -15,6 +15,14 @@ class CategoryItem extends StatelessWidget {
     });
   }
 
+  // * NOTES
+  // routes are needed for pushnamed
+  // the route id like /category-meals must be correct
+  // Or maybe a error that cannot be identified easily.
+  // * IMP
+  // Like passing data through can be done using ARGUMENTS argument.
+  // arguments can be anything but we are using maps cuz there are more things to pass through.
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
