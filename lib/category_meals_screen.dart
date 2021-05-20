@@ -12,6 +12,11 @@ class CategoryMealsScreen extends StatelessWidget {
         ModalRoute.of(context).settings.arguments as Map<String, String>;
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['id'];
+
+    // * IMP
+    // ModalRoute can be used to get title and id from the other screen.
+    // we can get map the items through variables
+
     return Scaffold(
       appBar: AppBar(
         title: Text(categoryTitle),
