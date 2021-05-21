@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './dummy_data.dart';
 
 class CategoryMealsScreen extends StatelessWidget {
 // static const for screenname or routename to for navigating to this page.
@@ -16,17 +17,24 @@ class CategoryMealsScreen extends StatelessWidget {
     final categoryTitle = routeArgs['title'];
     final categoryId = routeArgs['id'];
 
-    // * IMP
-    // ModalRoute can be used to get title and id from the other screen.
-    // we can get map the items through variables
-
+    final categoryMeals = DUMMY_MEALS.where((meal) {
+      return meal.categories.contains(categoryId);
+    }).toList();
     return Scaffold(
       appBar: AppBar(
         title: Text(categoryTitle),
       ),
-      body: Center(
-        child: Text('The Recipes For The Category'),
+      body: ListView.builder(
+        itemBuilder: (ctx, index) {
+          return Text(categoryMeals[index].title);
+        },
+        itemCount: categoryMeals.length,
       ),
     );
   }
 }
+
+// *NOTES
+// * IMP
+// ModalRoute can be used to get title and id from the other screen.
+// we can get map the items through variables
