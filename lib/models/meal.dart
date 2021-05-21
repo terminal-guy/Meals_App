@@ -14,7 +14,6 @@ enum Affordability {
 
 class Meal {
   final String id;
-  final List<String> categoryIds;
   final String title;
   final String imageUrl;
   final List<String> ingredients;
@@ -29,7 +28,6 @@ class Meal {
 
   const Meal({
     @required this.id,
-    @required this.categoryIds,
     @required this.title,
     @required this.imageUrl,
     @required this.ingredients,
