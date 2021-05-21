@@ -16,6 +16,7 @@ class Meal {
   final String id;
   final String title;
   final String imageUrl;
+  final List<String> categories;
   final List<String> ingredients;
   final List<String> steps;
   final int duration;
@@ -39,11 +40,11 @@ class Meal {
     @required this.isLactoseFree,
     @required this.isVegan,
     @required this.isVegetarian,
-    List<String> categories,
+    @required this.categories,
   });
 }
 
 // enum is very useful in case of using bool for if checks enum has the . annotation which can be easily used
 // enum numbers for computers that start from 0 to infinity no of items.
-// foundation.dart is minimal package. 
+// foundation.dart is minimal package.
 // Which has the @required annoation
