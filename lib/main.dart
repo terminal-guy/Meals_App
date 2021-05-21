@@ -35,6 +35,18 @@ class MyApp extends StatelessWidget {
         MealDetailScreen.screenname: (ctx) => MealDetailScreen(),
       },
 
+      onGenerateRoute: (settings) {
+        print(settings.arguments);
+        return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
+      },
+      // * for onGenerateRoute
+      // we don't really use this but this is useful instead of if the route is not found you can easily make this the default and not get a error.
+      // this is useful if screens are generated dynamically that we don't know the timeline.
+
+      onUnknownRoute: (settings) {},
+      // * for onUnknownRoute
+      // this can be really useful inorder can be used if flutter fails to render. like a 404
+
       // * NOTES
       // In routes '/' will be the default home page.
       // You can also override it with initialRoute
