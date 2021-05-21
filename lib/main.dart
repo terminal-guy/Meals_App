@@ -31,6 +31,12 @@ class MyApp extends StatelessWidget {
         '/': (ctx) => CategoriesScreen(),
         CategoryMealsScreen.screenName: (ctx) => CategoryMealsScreen(),
       },
+
+      // * NOTES
+      // In routes '/' will be the default home page.
+      // You can also override it with initialRoute
+      // In case of any typos in the routename it will cumbersome to find the bug.
+      // So we use a static const variable to use it.
     );
   }
 }

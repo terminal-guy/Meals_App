@@ -9,6 +9,7 @@ class CategoryItem extends StatelessWidget {
   CategoryItem(this.id, this.title, this.color);
 
   void selectCategory(BuildContext ctx) {
+// CHANGING THE PUSHNAMED ARGUMENT TO THE STATIC CONST VARIALBE THAT IS DEFINED IN THE CLASS
     Navigator.of(ctx).pushNamed(CategoryMealsScreen.screenName, arguments: {
       'id': id,
       'title': title,
