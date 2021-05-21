@@ -41,5 +41,6 @@ class Meal {
     @required this.isLactoseFree,
     @required this.isVegan,
     @required this.isVegetarian,
+    List<String> categories,
   });
 }
