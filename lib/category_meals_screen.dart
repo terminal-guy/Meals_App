@@ -38,3 +38,7 @@ class CategoryMealsScreen extends StatelessWidget {
 // * IMP
 // ModalRoute can be used to get title and id from the other screen.
 // we can get map the items through variables
+// * NOTES
+// From dummy_meals data we are iterating it from where keyword.
+// We are returning meals.categories and checking it has contains the categoryId
+// category id is DUMMY_CATEGORIES id value like c1, c2, c3....
