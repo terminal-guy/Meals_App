@@ -1,7 +1,9 @@
 # Meals App
 
 Pro Info: Instructor
+
 Status: Done
+
 Url: https://www.udemy.com/course/learn-flutter-dart-to-build-ios-android-apps/learn/lecture/15033798#overview
 
 - ***Introduction***
